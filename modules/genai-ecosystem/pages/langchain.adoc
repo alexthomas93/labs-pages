@@ -161,7 +161,7 @@ Using an LLM and the graph schema it translates the user question into a Cypher 
 # pip install --upgrade --quiet  langchain
 # pip install --upgrade --quiet  langchain-openai
 
-from langchain_neo4j import GraphCypherQAChain, Neo4jGraph
+from langchain_neo4j import Neo4jGraph, GraphCypherQAChain
 from langchain_openai import ChatOpenAI
 
 graph = Neo4jGraph(url=NEO4J_URI, username=NEO4J_USERNAME, password=NEO4J_PASSWORD)
@@ -256,7 +256,7 @@ Creating a Knowledge Graph from unstructured data like PDF documents used to be 
 
 The https://python.langchain.com/v0.1/docs/use_cases/graph/constructing[Graph Transformers^] are tools that allows you to extract structured data from unstructured documents and transform it into a Knowledge Graph.
 
-NOTE: You can see a practical application, code and demo for extracting knowledge graphs from PDFs, YouTube transcripts, wikpedia articles and more with the xref:llm-graph-builder.adoc[LLM Graph Builder].
+NOTE: You can see a practical application, code and demo for extracting knowledge graphs from PDFs, YouTube transcripts, wikipedia articles and more with the xref:llm-graph-builder.adoc[LLM Graph Builder].
 
 image::
 
